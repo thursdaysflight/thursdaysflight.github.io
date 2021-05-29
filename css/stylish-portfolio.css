@@ -6,6 +6,16 @@
 
 /* Global Styles */
 
+/*
+Dark Red: #781218
+Bright Red: #D92E27
+Orange: #F47C21
+Yellow: #FCB137
+Blue'ish Gray: #B9C9C5
+Blue: #2B368A
+Pink'ish Red: #BF2737
+*/
+
 html,
 body {
     width: 100%;
@@ -155,24 +165,26 @@ hr.small {
     position: relative;
     width: 100%;
     height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
+    /*background: url(../img/tf-initials.png) no-repeat center center scroll;*/
+    background-color: #781218;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    color: #fff;
 }
 
 /* About */
 
 .about {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
 }
 
 /* Services */
 
 .services {
     padding: 0px 0 50px 0;
-    background-color: #6c0202;
+    background-color: #000;
 }
 
 .service-item {
@@ -186,8 +198,7 @@ hr.small {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../img/callout.png) no-repeat center center scroll;
-    background-color: #1e1b1c;
+    background-color: #2B368A;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     background-size: contain;
@@ -202,6 +213,12 @@ hr.small {
 
 .portfolio-item {
     margin-bottom: 30px;
+    border: 1px solid #BF2737;
+}
+
+.portfolio-item-info {
+    background-color: #BF2737;
+    padding: 10px 0;
 }
 
 .img-portfolio {
@@ -216,7 +233,7 @@ hr.small {
 
 .music {
     padding: 50px 0;
-    background-color: #6c0202;
+    background-color: #000;
 }
 
 #musicPlayerWrapper { background-color: #FFFFFF; }
