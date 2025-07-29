@@ -556,6 +556,7 @@
   .band-name {
     font-size: 2.5em;
     letter-spacing: 2px;
+    background: linear-gradient(45deg, #fff, #ccc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -690,6 +691,7 @@
   .band-name {
     font-size: 2em;
     letter-spacing: 1px;
+    background: linear-gradient(45deg, #fff, #ccc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
