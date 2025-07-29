@@ -2,60 +2,85 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>About {{ site.band_name }}</h2>
+        <h2 class="section-title">About {{ site.band_name }}</h2>
         <hr class="small">
-        <p class="lead">{{ site.band_description }}</p>
+        <p class="lead section-description">{{ site.band_description }}</p>
       </div>
     </div>
     
-    <!-- Band Photos -->
+    <!-- Band Members -->
     <div class="row">
-      <div class="col-lg-4 col-sm-6">
-        <div class="band-member">
-          <img src="img/portfolio-matt.jpg" class="img-responsive" alt="Matt">
-          <h4>Matt</h4>
-          <p>Drums</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="band-member">
-          <img src="img/portfolio-kurt.jpg" class="img-responsive" alt="Kurt">
-          <h4>Kurt</h4>
-          <p>Bass / Backing Vocals</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="band-member">
-          <img src="img/portfolio-greg.jpg" class="img-responsive" alt="Greg">
-          <h4>Greg</h4>
-          <p>Lead Guitar / Backing Vocals</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="band-member">
-          <img src="img/portfolio-pat.jpg" class="img-responsive" alt="Pat">
-          <h4>Pat</h4>
-          <p>Keys / Lead Vocals</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-sm-6">
-        <div class="band-member">
-          <img src="img/portfolio-garrison.jpg" class="img-responsive" alt="Garrison">
-          <h4>Garrison</h4>
-          <p>Rhythm Guitar / Backing Vocals</p>
+      <div class="col-lg-12">
+        <h3 class="text-center members-title">Meet the Band</h3>
+        <div class="band-members-grid">
+          <div class="band-member">
+            <div class="member-photo">
+              <img src="img/portfolio-pat.jpg" alt="Pat">
+            </div>
+            <div class="member-info">
+              <h4>Pat</h4>
+              <p class="member-role">Keys / Lead Vocals</p>
+            </div>
+          </div>
+          
+          <div class="band-member">
+            <div class="member-photo">
+              <img src="img/portfolio-kurt.jpg" alt="Kurt" />
+            </div>
+            <div class="member-info">
+              <h4>Kurt</h4>
+              <p class="member-role">Bass / Backing Vocals</p>
+            </div>
+          </div>
+          
+          <div class="band-member">
+            <div class="member-photo">
+              <img src="img/portfolio-matt.jpg" alt="Matt" />
+            </div>
+            <div class="member-info">
+              <h4>Matt</h4>
+              <p class="member-role">Drums</p>
+            </div>
+          </div>
+          
+          <div class="band-member">
+            <div class="member-photo">
+              <img src="img/portfolio-greg.jpg" alt="Greg" />
+            </div>
+            <div class="member-info">
+              <h4>Greg</h4>
+              <p class="member-role">Lead Guitar / Backing Vocals</p>
+            </div>
+          </div>
+          
+          <div class="band-member">
+            <div class="member-photo">
+              <img src="img/portfolio-garrison.jpg" alt="Garrison" />
+            </div>
+            <div class="member-info">
+              <h4>Garrison</h4>
+              <p class="member-role">Rhythm Guitar / Backing Vocals</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
     
-    <!-- Additional Band Info -->
+    <!-- Band Story -->
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <div class="band-info">
-          <h3>Our Story</h3>
-          <p>Based in {{ site.band_location }}, {{ site.band_name }} has been rocking the local scene with our unique blend of original music and classic covers. We love performing at private parties, charity events, and community gatherings.</p>
-          <p>For booking inquiries, please <a href="#contact">contact us</a>.</p>
+      <div class="col-lg-12">
+        <div class="band-story">
+          <div class="story-content">
+            <h3>Our Story</h3>
+            <p>Based in {{ site.band_location }}, {{ site.band_name }} has been rocking the local scene with our unique blend of original music and classic covers. We love performing at private parties, charity events, and community gatherings.</p>
+            <p>Our music spans multiple decades, bringing the energy and excitement of live rock music to every venue we play. From intimate acoustic sets to full electric performances, we adapt our sound to create the perfect atmosphere for your event.</p>
+            <div class="story-cta">
+              <a href="#contact" class="btn btn-primary btn-lg">Book Us for Your Event</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <br />
   </div>
 </section>
