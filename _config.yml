@@ -14,11 +14,10 @@ band_description: "Thursday's Flight is based in Holly Springs, NC and is availa
 
 # Social media links
 social_links:
-  facebook: "thursdaysflight"
-  youtube: "@thursdaysflight"
-  instagram: "thursdaysflight"
-  spotify: "thursdaysflight"
-  apple_music: "thursdaysflight"
+  facebook: "https://facebook.com/thursdaysflight"
+  youtube: "https://youtube.com/@thursdaysflight"
+  spotify: "https://open.spotify.com/artist/5vxonuiriqJsHAng1e8EFf"
+  apple_music: "https://music.apple.com/us/artist/thursdays-flight/1203786498"
 
 # Music links
 music_links:
