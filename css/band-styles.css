@@ -572,8 +572,9 @@
   }
   
   .band-members-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    max-width: 100%;
   }
   
   .band-member:nth-child(1) {
@@ -585,28 +586,44 @@
   }
   
   .band-member:nth-child(3) {
-    grid-column: 3;
-  }
-  
-  .band-member:nth-child(4) {
     grid-column: 1;
   }
   
-  .band-member:nth-child(5) {
+  .band-member:nth-child(4) {
     grid-column: 2;
   }
   
+  .band-member:nth-child(5) {
+    grid-column: 1;
+  }
+  
   .band-member {
-    padding: 20px;
+    padding: 15px;
   }
   
   .member-photo img {
     width: 120px;
-    height: 120px;
+    height: 160px;
+  }
+  
+  .member-info h4 {
+    font-size: 1.1em;
+  }
+  
+  .member-role {
+    font-size: 0.9em;
   }
   
   .band-story {
-    padding: 30px 20px;
+    padding: 25px 15px;
+  }
+  
+  .story-content h3 {
+    font-size: 1.5em;
+  }
+  
+  .story-content p {
+    font-size: 1em;
   }
   
   .shows-container {
@@ -616,11 +633,20 @@
   .show-card {
     flex-direction: column;
     text-align: center;
+    padding: 15px;
   }
   
   .show-date {
     margin-right: 0;
     margin-bottom: 15px;
+  }
+  
+  .show-date .day {
+    font-size: 1.5em;
+  }
+  
+  .show-date .month {
+    font-size: 1em;
   }
   
   .album-links {
@@ -636,9 +662,30 @@
     padding: 10px 15px;
     font-size: 0.9em;
   }
+  
+  .gigs h2 {
+    font-size: 1.5em;
+  }
 }
 
 @media (max-width: 480px) {
+  .band-logo {
+    max-width: 150px;
+  }
+  
+  .band-name {
+    font-size: 2em;
+    letter-spacing: 1px;
+  }
+  
+  .band-tagline {
+    font-size: 1em;
+  }
+  
+  .section-title {
+    font-size: 1.8em;
+  }
+  
   .band-members-grid {
     grid-template-columns: 1fr;
     gap: 15px;
@@ -650,6 +697,71 @@
   .band-member:nth-child(4),
   .band-member:nth-child(5) {
     grid-column: 1;
+  }
+  
+  .band-member {
+    padding: 20px 15px;
+  }
+  
+  .member-photo img {
+    width: 100px;
+    height: 133px;
+  }
+  
+  .member-info h4 {
+    font-size: 1em;
+  }
+  
+  .member-role {
+    font-size: 0.8em;
+  }
+  
+  .band-story {
+    padding: 20px 10px;
+  }
+  
+  .story-content h3 {
+    font-size: 1.3em;
+  }
+  
+  .story-content p {
+    font-size: 0.9em;
+  }
+  
+  .header-buttons .btn {
+    width: 180px;
+    padding: 10px 20px;
+    font-size: 0.9em;
+  }
+  
+  .gigs h2 {
+    font-size: 1.3em;
+  }
+  
+  .gig-tabs > li > a {
+    padding: 8px 12px;
+    font-size: 0.8em;
+  }
+  
+  .show-card {
+    padding: 12px;
+  }
+  
+  .show-date .day {
+    font-size: 1.3em;
+  }
+  
+  .show-date .month {
+    font-size: 0.9em;
+  }
+  
+  .show-details h4 {
+    font-size: 1em;
+  }
+  
+  .show-location,
+  .show-time {
+    font-size: 0.9em;
   }
 }
 
