@@ -1,10 +1,15 @@
 <header id="top" class="header">
   <div class="text-vertical-center">
-    <h1>{{ site.band_name }}</h1>
-    <h3>{{ site.band_genre }} from {{ site.band_location }}</h3>
+    <div class="logo-container">
+      <img src="img/logo.png" alt="{{ site.band_name }}" class="band-logo">
+    </div>
+    <h1 class="band-name">{{ site.band_name }}</h1>
+    <h3 class="band-tagline">{{ site.band_genre }} from {{ site.band_location }}</h3>
     <br>
-    <a href="#about" class="btn btn-dark btn-lg">Learn More</a>
-    <a href="#albums" class="btn btn-dark btn-lg">Our Music</a>
-    <a href="#gigs" class="btn btn-dark btn-lg">Live Shows</a>
+    <div class="header-buttons">
+      <a href="#about" class="btn btn-outline-light btn-lg">Learn More</a>
+      <a href="#albums" class="btn btn-outline-light btn-lg">Our Music</a>
+      <a href="#gigs" class="btn btn-outline-light btn-lg">Live Shows</a>
+    </div>
   </div>
 </header>
