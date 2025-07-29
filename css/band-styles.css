@@ -8,17 +8,6 @@
   overflow: hidden;
 }
 
-.header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.03)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
-  pointer-events: none;
-}
-
 .logo-container {
   margin-bottom: 30px;
 }
@@ -211,8 +200,8 @@
 
 .member-photo img {
   width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  height: 200px;
+  border-radius: 10%;
   object-fit: cover;
   border: 4px solid #f8f9fa;
   transition: all 0.3s ease;
@@ -242,6 +231,12 @@
   color: #666;
   font-style: italic;
   margin: 0;
+}
+
+.member-role.quote {
+  font-weight: lighter;
+  color: #999;
+  font-size: 2.5em;
 }
 
 .band-story {
@@ -362,7 +357,7 @@
 /* Gigs Section */
 .gig-tabs {
   border-bottom: 2px solid #ddd;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   display: inline-block;
 }
 
@@ -394,6 +389,10 @@
   margin-right: 8px;
 }
 
+.gigs h2 {
+  color: #BBB;
+}
+
 .tab-content {
   margin-top: 20px;
 }
@@ -402,7 +401,6 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
-  margin-top: 30px;
 }
 
 .show-card {
@@ -425,7 +423,6 @@
 
 .show-card.past {
   border-left: 5px solid #6c757d;
-  opacity: 0.8;
 }
 
 .show-date {
@@ -449,6 +446,12 @@
   text-transform: uppercase;
 }
 
+.show-date .year {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #666;
+}
+
 .show-details h4 {
   color: #333;
   margin-bottom: 5px;
@@ -466,7 +469,7 @@
 }
 
 .past-shows {
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 .no-shows {
@@ -660,8 +663,15 @@ section h2 {
   color: #333;
 }
 
-section.bg-primary h2 {
-  color: #fff;
+section.bg-primary h2, .gigs h2 {
+  color: #f67b01;
+  font-weight: bolder;
+  font-family: 'Orbitron', 'Share Tech Mono', monospace;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 hr.small {
