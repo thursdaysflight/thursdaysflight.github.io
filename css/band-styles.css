@@ -545,6 +545,10 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .header {
+    padding: 40px 0;
+  }
+  
   .band-logo {
     max-width: 200px;
   }
@@ -552,6 +556,9 @@
   .band-name {
     font-size: 2.5em;
     letter-spacing: 2px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   
   .band-tagline {
@@ -561,10 +568,13 @@
   .header-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 15px;
   }
   
   .header-buttons .btn {
     width: 200px;
+    padding: 10px 20px;
+    font-size: 0.9em;
   }
   
   .section-title {
@@ -669,6 +679,10 @@
 }
 
 @media (max-width: 480px) {
+  .header {
+    padding: 30px 0;
+  }
+  
   .band-logo {
     max-width: 150px;
   }
@@ -676,10 +690,23 @@
   .band-name {
     font-size: 2em;
     letter-spacing: 1px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
   }
   
   .band-tagline {
     font-size: 1em;
+  }
+  
+  .header-buttons {
+    gap: 10px;
+  }
+  
+  .header-buttons .btn {
+    width: 180px;
+    padding: 10px 20px;
+    font-size: 0.9em;
   }
   
   .section-title {
@@ -725,12 +752,6 @@
   }
   
   .story-content p {
-    font-size: 0.9em;
-  }
-  
-  .header-buttons .btn {
-    width: 180px;
-    padding: 10px 20px;
     font-size: 0.9em;
   }
   
