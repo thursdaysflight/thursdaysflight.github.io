@@ -1,0 +1,116 @@
+<section id="gigs" class="gigs">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>Live Shows</h2>
+        <hr class="small">
+        <p class="lead">Catch us live or check out where we've been</p>
+      </div>
+    </div>
+    
+    <!-- Tab Navigation -->
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <ul class="nav nav-tabs gig-tabs" id="gigTabs" role="tablist">
+          <li role="presentation" class="active">
+            <a href="#upcoming" id="upcoming-tab" role="tab" data-toggle="tab" aria-controls="upcoming" aria-expanded="true">
+              <i class="fa fa-calendar-plus-o"></i> Upcoming Shows
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="#past" id="past-tab" role="tab" data-toggle="tab" aria-controls="past" aria-expanded="false">
+              <i class="fa fa-calendar-check-o"></i> Past Shows
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Tab Content -->
+    <div class="tab-content" id="gigTabContent">
+      <!-- Upcoming Shows Tab -->
+      <div role="tabpanel" class="tab-pane fade in active" id="upcoming" aria-labelledby="upcoming-tab">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="shows-container">
+              {% if site.data.upcoming-shows %}
+                {% assign upcoming_shows = site.data.upcoming-shows | sort: 'date' %}
+                {% if upcoming_shows.size > 0 %}
+                  {% for show in upcoming_shows %}
+                  <div class="show-card upcoming">
+                    <div class="show-date">
+                      <span class="day">{{ show.date | date: "%d" }}</span>
+                      <span class="month">{{ show.date | date: "%b" }}</span>
+                    </div>
+                    <div class="show-details">
+                      <h4>{{ show.venue }}</h4>
+                      <p class="show-location">{{ show.city }}</p>
+                      <p class="show-time">{{ show.time }}</p>
+                      {% if show.info_link %}
+                      <a href="{{ show.info_link }}" class="btn btn-primary btn-sm" target="_blank">More Info</a>
+                      {% endif %}
+                    </div>
+                  </div>
+                  {% endfor %}
+                {% else %}
+                  <div class="no-shows">
+                    <p>No upcoming shows scheduled at the moment. Check back soon!</p>
+                    <a href="#contact" class="btn btn-primary">Book Us</a>
+                  </div>
+                {% endif %}
+              {% else %}
+                <div class="no-shows">
+                  <p>No upcoming shows scheduled at the moment. Check back soon!</p>
+                  <a href="#contact" class="btn btn-primary">Book Us</a>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Pat Shows Tab -->
+      <div role="tabpanel" class="tab-pane fade" id="past" aria-labelledby="past-tab">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="shows-container past-shows">
+              {% if site.data.past-shows %}
+                {% assign past_shows = site.data.past-shows | sort: 'date' | reverse %}
+                {% for show in past_shows limit: 8 %}
+                <div class="show-card past">
+                  <div class="show-date">
+                    <span class="day">{{ show.date | date: "%d" }}</span>
+                    <span class="month">{{ show.date | date: "%b" }}</span>
+                  </div>
+                  <div class="show-details">
+                    <h4>{{ show.venue }}</h4>
+                    <p class="show-location">{{ show.city }}</p>
+                    <p class="show-time">{{ show.time }}</p>
+                  </div>
+                </div>
+                {% endfor %}
+              {% else %}
+                <div class="no-shows">
+                  <p>No past shows to display yet.</p>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+$(document).ready(function() {
+  // Initialize tabs when document is ready
+  $('#gigTabs a').on('click', function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+  
+  // Ensure first tab is active
+  $('#gigTabs a:first').tab('show');
+});
+</script> 

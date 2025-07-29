@@ -6,3 +6,17 @@
 
 <!-- Custom Theme JavaScript -->
 <script src="js/custom.js"></script>
+
+<script>
+// Ensure Bootstrap tabs work properly
+$(document).ready(function() {
+  // Initialize all Bootstrap components
+  $('[data-toggle="tab"]').tab();
+  
+  // Additional tab initialization for our custom tabs
+  $('#gigTabs a').on('click', function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+});
+</script>

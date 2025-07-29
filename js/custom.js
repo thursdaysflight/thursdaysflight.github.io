@@ -37,4 +37,13 @@ $(document).ready(function() {
   $('#map_iframe').mouseleave(function  () {
     $('#map_iframe').addClass('scrolloff');
   });
+  
+  // Initialize Bootstrap tabs
+  $('#gigTabs a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+  
+  // Show the first tab by default
+  $('#gigTabs a:first').tab('show');
 });

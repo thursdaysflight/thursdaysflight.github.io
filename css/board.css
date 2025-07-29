@@ -1,0 +1,30 @@
+body {
+    background-color: #111;
+    color: #0f0;
+    font-family: 'Share Tech Mono', monospace;
+    padding: 2rem;
+  }
+  
+  .board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .board-entry {
+    background: #222;
+    border: 2px solid #333;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #0f0;
+    box-shadow: 0 0 10px #0f0;
+    animation: flip 0.8s ease-in-out;
+  }
+  
+  @keyframes flip {
+    0% { transform: rotateX(90deg); opacity: 0; }
+    100% { transform: rotateX(0); opacity: 1; }
+  }
+  

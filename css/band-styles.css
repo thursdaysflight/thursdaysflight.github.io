@@ -1,0 +1,337 @@
+/* Band Website Custom Styles */
+
+/* About Section */
+.band-member {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.band-member:hover {
+  transform: translateY(-5px);
+}
+
+.band-member img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #fff;
+}
+
+.band-member h4 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.band-member p {
+  color: #666;
+  font-style: italic;
+}
+
+.band-info {
+  margin-top: 40px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+
+.band-info h3 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Albums Section */
+.album-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.album-card:hover {
+  transform: translateY(-5px);
+}
+
+.album-cover img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.album-info h3 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.album-year {
+  color: #ccc;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.album-description {
+  color: #ddd;
+  margin-bottom: 20px;
+}
+
+.album-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.album-links .btn {
+  margin: 5px;
+  min-width: 100px;
+}
+
+/* Gigs Section */
+.gig-tabs {
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.gig-tabs > li > a {
+  border: none;
+  color: #666;
+  font-weight: 600;
+  padding: 15px 25px;
+  margin-right: 5px;
+  border-radius: 5px 5px 0 0;
+  transition: all 0.3s ease;
+}
+
+.gig-tabs > li > a:hover {
+  background-color: #f8f9fa;
+  color: #333;
+  border: none;
+}
+
+.gig-tabs > li.active > a,
+.gig-tabs > li.active > a:focus,
+.gig-tabs > li.active > a:hover {
+  background-color: #337ab7;
+  color: #fff;
+  border: none;
+}
+
+.gig-tabs > li > a > i {
+  margin-right: 8px;
+}
+
+.tab-content {
+  margin-top: 20px;
+}
+
+.shows-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.show-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.show-card:hover {
+  transform: translateY(-3px);
+}
+
+.show-card.upcoming {
+  border-left: 5px solid #28a745;
+}
+
+.show-card.past {
+  border-left: 5px solid #6c757d;
+  opacity: 1.0;
+}
+
+.show-date {
+  text-align: center;
+  margin-right: 20px;
+  min-width: 80px;
+}
+
+.show-date .day {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  line-height: 1;
+}
+
+.show-date .month {
+  display: block;
+  font-size: 1.1em;
+  color: #666;
+  text-transform: uppercase;
+}
+
+.show-details h4 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.show-location {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.show-time {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+
+.past-shows {
+  opacity: 0.8;
+}
+
+.no-shows {
+  text-align: center;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  grid-column: 1 / -1;
+}
+
+.no-shows p {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Contact Section */
+.contact-info, .social-links, .booking-info {
+  margin-bottom: 40px;
+}
+
+.contact-info h3, .social-links h3, .booking-info h3 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  color: #ddd;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contact-info a:hover {
+  color: #ccc;
+}
+
+.social-links ul {
+  margin-top: 20px;
+}
+
+.social-links li {
+  margin: 0 15px;
+}
+
+.social-links a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ccc;
+}
+
+.booking-info ul {
+  margin: 20px 0;
+}
+
+.booking-info li {
+  color: #ddd;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+.booking-info .fa-check {
+  color: #28a745;
+  margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .band-member img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .shows-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .show-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .show-date {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .album-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .album-links .btn {
+    width: 200px;
+  }
+  
+  .gig-tabs > li > a {
+    padding: 10px 15px;
+    font-size: 0.9em;
+  }
+}
+
+/* Section Spacing */
+section {
+  padding: 80px 0;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+section.bg-primary h2 {
+  color: #fff;
+}
+
+hr.small {
+  max-width: 100px;
+  margin: 20px auto;
+  border-color: #333;
+}
+
+section.bg-primary hr.small {
+  border-color: #fff;
+} 
