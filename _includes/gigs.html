@@ -77,7 +77,7 @@
             <div class="shows-container past-shows">
               {% if site.data.past-shows %}
                 {% assign past_shows = site.data.past-shows | sort: 'date' | reverse %}
-                {% for show in past_shows limit: 8 %}
+                {% for show in past_shows limit: 100 %}
                 <div class="show-card past">
                   <div class="show-date">
                     <span class="day">{{ show.date | date: "%d" }}</span>
@@ -87,7 +87,6 @@
                   <div class="show-details">
                     <h4>{{ show.venue }}</h4>
                     <p class="show-location">{{ show.city }}</p>
-                    <p class="show-time">{{ show.time }}</p>
                   </div>
                 </div>
                 {% endfor %}

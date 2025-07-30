@@ -1,29 +1,119 @@
 - date: "2025-06-20"
   city: "Raleigh, NC"
   venue: "Compass Rose Brewery"
-  time: "7:00 PM"
-  status: "past"
 
 - date: "2025-03-28"
   city: "Raleigh, NC"
   venue: "Compass Rose Brewery"
-  time: "7:00 PM"
-  status: "past"
 
 - date: "2024-04-27"
   city: "Holly Springs, NC"
   venue: "Bombshell Beer Co."
-  time: "7:00 PM"
-  status: "past"
 
 - date: "2024-03-30"
   city: "Angier, NC"
   venue: "Napper Tandy's"
-  time: "9:00 PM"
-  status: "past"
 
 - date: "2024-02-18"
   city: "Raleigh, NC"
   venue: "Saints & Scholars"
-  time: "3:00 PM"
-  status: "past"
+
+- date: "2024-02-18"
+  city: "Raleigh, NC"
+  venue: "Saints & Scholars"
+
+- date: "2023-10-28"
+  city: "Angier, NC"
+  venue: "Napper Tandy's"
+
+- date: "2023-10-16"
+  city: "Holly Springs, NC"
+  venue: "Bombshell Beer Co."
+
+- date: "2023-05-28"
+  city: "Coats, NC"
+  venue: "Kicking Camel Grill"
+
+- date: "2023-05-13"
+  city: "Angier, NC"
+  venue: "Headquarters Beer Hiouse"
+
+- date: "2023-04-22"
+  city: "Fuquay-Varina, NC"
+  venue: "Oaklyn Springs Brewery"
+
+- date: "2023-02-17"
+  city: "Angier, NC"
+  venue: "Headquarters Beer House"
+
+- date: "2023-01-12"
+  city: "Fuquay-Varina, NC"
+  venue: "Fainting Goat Brewing Company"
+
+- date: "2021-07-24"
+  city: "Apex, NC"
+  venue: "Peak City Pig Fest"
+
+- date: "2021-07-10"
+  city: "Holly Springs, NC"
+  venue: "Holly Springs Farmer's Market"
+
+- date: "2021-06-11"
+  city: "Holly Springs, NC"
+  venue: "Block on Main"
+
+- date: "2020-12-12"
+  city: "Holly Springs, NC"
+  venue: "Holly Springs Tree Trail"
+
+- date: "2020-06-20"
+  city: "Apex, NC"
+  venue: "Peak City Pig Fest"
+
+- date: "2020-05-30"
+  city: "Holly Springs, NC"
+  venue: "Holly Springs Farmer's Market"
+
+- date: "2019-06-22"
+  city: "Holly Springs, NC"
+  venue: "Holly Springs Farmer's Market"
+
+- date: "2019-06-15"
+  city: "Apex, NC"
+  venue: "Peak City Pig Fest"
+
+- date: "2019-02-01"
+  city: "Wake Forest, NC"
+  venue: "Real McCoy's"
+
+- date: "2019-05-19"
+  city: "Cary, NC"
+  venue: "Relay for Life"
+
+- date: "2018-03-24"
+  city: "Holly Springs, NC"
+  venue: "Holly Springs Cultural Center"
+
+- date: "2018-03-23"
+  city: "Holly Springs, NC"
+  venue: "Holly Springs Cultural Center"
+
+- date: "2017-06-17"
+  city: "Apex, NC"
+  venue: "Peak City Pig Fest"
+
+- date: "2017-06-23"
+  city: "Holly Springs, NC"
+  venue: "Holly Springs Farmer's Market"
+
+- date: "2017-05-20"
+  city: "Holly Springs, NC"
+  venue: "Relay for Life"
+
+- date: "2016-05-20"
+  city: "Holly Springs, NC"
+  venue: "Relay for Life"
+
+- date: "2015-10-10"
+  city: "Holly Springs, NC"
+  venue: "Niche Wine Bar"
