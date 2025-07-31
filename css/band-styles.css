@@ -897,6 +897,7 @@ section.bg-primary hr.small {
   max-width: 100%;
   height: auto;
   transition: transform 0.3s ease;
+  margin: 0 auto;
 }
 
 .merch-image img:hover {
