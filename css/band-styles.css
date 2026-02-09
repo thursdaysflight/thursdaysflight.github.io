@@ -140,7 +140,7 @@
 
 .band-members-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   margin-bottom: 60px;
   max-width: 1200px;
@@ -157,11 +157,11 @@
 }
 
 .band-member:nth-child(3) {
-  grid-column: 3;
+  grid-column: 1;
 }
 
 .band-member:nth-child(4) {
-  grid-column: 1;
+  grid-column: 2;
 }
 
 .band-member:nth-child(5) {
