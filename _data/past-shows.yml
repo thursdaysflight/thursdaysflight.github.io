@@ -22,10 +22,6 @@
   city: "Raleigh, NC"
   venue: "Saints & Scholars"
 
-- date: "2024-02-18"
-  city: "Raleigh, NC"
-  venue: "Saints & Scholars"
-
 - date: "2023-10-28"
   city: "Angier, NC"
   venue: "Napper Tandy's"
@@ -40,7 +36,7 @@
 
 - date: "2023-05-13"
   city: "Angier, NC"
-  venue: "Headquarters Beer Hiouse"
+  venue: "Headquarters Beer House"
 
 - date: "2023-04-22"
   city: "Fuquay-Varina, NC"
